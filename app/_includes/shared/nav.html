@@ -1,0 +1,25 @@
+<header>
+
+	<nav>
+		<h1><a href="/">Camille</a></h1>
+		<ul class="main">
+			<li><a href="/news/" {% if page.title == 'news' %}class="active"{% endif %}>News</a></li>
+			<li><a href="/bio/" {% if page.title == 'bio' %}class="active"{% endif %}>Bio</a></li>
+			<li><a href="/music/" {% if page.title == 'music' %}class="active"{% endif %}>Music</a></li>
+			<li><a href="/video/" {% if page.title == 'video' %}class="active"{% endif %}>Video</a></li>
+			<li><a href="/gallery/" {% if page.title == 'gallery' %}class="active"{% endif %}>Gallery</a></li>
+			<li><a href="/gigs/" {% if page.title == 'gigs' %}class="active"{% endif %}>Gigs</a></li>
+			<li><a href="/contact/" {% if page.title == 'contact' %}class="active"{% endif %}>Contact</a></li>
+		</ul>
+		<div>
+			<a class="mobile" href="#"></a>
+		</div>
+		<ul class="social">
+			<li><a href=""><span class="icon-social-envelope"></span></a></li>
+			<li><a href=""><span class="icon-social-twitter"></span></a></li>
+			<li><a href=""><span class="icon-social-facebook"></span></a></li>
+			<li><a href=""><span class="icon-social-youtube"></span></a></li>
+		</ul>
+	</nav>
+
+</header>

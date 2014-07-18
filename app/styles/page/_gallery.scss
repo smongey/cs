@@ -1,0 +1,48 @@
+.gallery {
+	@include outer-container;
+	padding-top: em(120);
+	h1 {
+		display: none;
+		color: red;
+	}
+	.item { 
+		background: white;
+		width: 250px; 
+		margin-bottom: em(10); 
+		h5 {
+			width: 100%;
+			height: 40px;
+			color: black;
+			position: absolute;
+			top: 50%;
+			margin-top: -30px;
+			z-index: 3;
+			opacity: 0;
+			text-align: center;
+			font: bold 14px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+			@include transition(all ease 0.2s);
+		}
+		img {
+			display: block;
+			@include transition(all ease 0.2s);
+		}
+		&:hover {
+			h5 {
+				margin-top: -15px;
+				opacity: 1;
+			}
+			img {
+				opacity: .4;
+			}
+		}
+	}
+	.item.w2 { width: 510px;
+		@media screen and (max-width: 720px) { 
+			width: 250px;
+		}
+	}
+	.images {
+		margin-bottom: em(30);
+	}
+}

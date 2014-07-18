@@ -1,0 +1,162 @@
+.news {
+	@include outer-container;
+	padding: em(120) 0 0 0;
+	h1 {
+		display: none;
+	}
+}
+
+.entries {
+	float:left;
+	width: 65%;
+	position: relative;
+	padding-bottom: em(30);
+	@media screen and (max-width: 720px) { 
+		width: 100%;
+	}
+	.entry {
+		position: relative;
+		width: 100%;
+		float: left;
+		background: white;
+		margin-bottom: em(10);
+		@include transition(all ease .2s);
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+		.info {
+			padding: em(10) em(20) em(15);
+		}
+		h2 {
+			font:28px/32px 'Caslon', Georgia, serif;
+			padding: em(5) 0 em(10);
+			color: black;
+		}
+		p {
+			font:15px/22px 'Libre Baskerville', Georgia, serif;
+			padding-bottom: em(10);
+			color: black;
+		}
+		.date {
+			font:13px/23px 'Libre Baskerville', Georgia, serif;
+			color: lighten(black, 50%);
+			padding-top: em(10);
+		}
+		&:hover {
+			background: darken(white, 10%);
+		}
+	}
+	.half {
+		width: 49%;
+		margin-right: 2%;
+		@media screen and (max-width: 720px) { 
+			width: 100%;
+			margin-right: 0;
+		}
+		&.second {
+			margin-right: 0;
+		}
+	}
+	.more {
+		float: left;
+		width: 100%;
+		font: bold 15px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+		text-transform: uppercase;
+		padding: em(20) 0;
+		color: black;
+		border-bottom: 1px solid transparent;
+		@include transition(all ease .2s);
+		&:hover {
+			border-bottom: 1px solid black;
+		}
+	}
+}
+
+aside {
+	float: right;
+	width: 30%;
+	background: white;
+	@media screen and (max-width: 720px) { 
+		width: 100%;
+	}
+	.tweets {
+		display: block;
+		overflow: hidden;
+		height: auto;
+		padding: em(35) em(40) em(70);
+		background: #B7B5B5;
+		position: relative;
+		@include transition(all ease 0.2s);
+		@media screen and (max-width: 890px) {
+			padding: em(25) em(25) em(50);
+		}
+		&:hover {
+			background: rgba(0,0,0,.05);
+			color: black;
+			.follow {
+				left: em(38);
+				p { opacity: 1; padding-left: 30px; }
+			}
+		}
+		p {
+			font:16px/24px 'Libre Baskerville', Georgia, serif;
+			a { color: black; }
+		}
+		a.follow {
+			position: absolute;
+			margin: em(15) 0 0 0;
+			left: calc(50% - 10px);
+			color: $slate;
+			@include transition(all ease 0.5s);
+		}
+		.follow p { 
+			font: bold 14px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+			position: absolute;
+			opacity: 0;
+			width: 200px;
+			@include transition(all ease 0.5s);
+		}
+		.follow span:before { 
+			font-size: 1.5em;
+			display: block;
+			position: absolute;
+			opacity: 1;
+		}
+	}
+
+	.archive {
+		padding: em(35) em(40) em(30);
+		@media screen and (max-width: 890px) {
+			padding: em(25);
+		}
+		h3 {
+			font: bold 18px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+			padding-bottom: em(10);
+			border-bottom: 1px solid $slate;
+		}
+		ul {
+			margin-bottom: em(20);
+		}
+		li {
+			padding: em(10) 0 em(10) 0;
+			border-bottom: 1px solid $slate;
+			@include transition(all ease .2s);
+			h4 {
+				font:16px/24px 'Libre Baskerville', Georgia, serif;
+				color: black;
+			}
+			.date {
+				font:13px/23px 'Libre Baskerville', Georgia, serif;
+				color: lighten(black, 50%);
+			}
+			&:hover {
+				background: lighten(black, 95%);
+				padding-left: em(15);
+			}
+		}
+	}
+
+}

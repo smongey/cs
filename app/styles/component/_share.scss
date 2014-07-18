@@ -1,0 +1,25 @@
+.share {
+	position: absolute;
+	right: 0px;
+	bottom: em(15);
+	margin-right: em(-30);
+	@include transition(all ease .2s);
+	h4 { 
+		font:13px/23px 'Libre Baskerville', Georgia, serif;
+		color: lighten(black, 50%);
+		display: inline-block; 
+	}
+	ul, ul li { display: inline-block; }
+	li {
+		padding: em(5);
+	}
+	li a {
+		color: lighten(black, 30%);
+		opacity: 0;
+	@include transition(all ease .2s);
+	}
+	&:hover {
+		margin-right: em(10);
+		li a { opacity: 1; }
+	}
+}

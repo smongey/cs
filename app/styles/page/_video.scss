@@ -1,0 +1,116 @@
+.mainvideo {
+
+	h1 { display: none; }
+
+}
+
+.latest {
+	@include outer-container;
+	padding: em(120) 0 em(40) 0;
+	overflow: auto;
+	video {
+		width: 66%;
+		display: block;
+		float: left;
+		background: black;
+		@media screen and (max-width: 890px) {
+			width:100%;
+		}
+
+	}
+	.info {
+		width: 34%;
+		float: left;
+		display: block;
+		position: relative;
+		background: white;
+		height: 400px;
+		padding: em(30) em(40) em(15) em(40);
+		overflow: hidden;
+		@media screen and (max-width: 890px) {
+			width: 100%;
+			text-align: center;
+			height:120px;
+		}
+		@media screen and (max-width: 720px) { 
+			height: 150px;
+		}
+		h2 {
+			font: 26px/30px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+		}
+		h3 {
+			font:12px/20px 'Libre Baskerville', Georgia, serif;
+			font-style: italic;
+			text-transform: none;
+			color: lighten(black, 50%);
+		}
+		.arrows {
+			position: absolute;
+			bottom: em(20);
+			a {
+				font:13px/23px 'Libre Baskerville', Georgia, serif;
+				color: lighten(black, 50%);
+				padding: em(5);
+				&:hover{
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+.videos {
+	@include outer-container;
+	padding-bottom: em(30); 
+	li {
+		float: left;
+		width: 24%;
+		margin:0 1.33% em(20) 0;
+		position: relative;
+		overflow: hidden;
+		@media screen and (max-width: 890px) {
+			width: 32%;
+		}
+		@media screen and (max-width: 720px) { 
+			width: 49%;
+			margin-right: 1%;
+			margin-bottom: em(5);
+		}
+		img {
+			width: 100%;
+			position: relative;
+			z-index: 2;
+		}
+
+		h5 {
+			width: 100%;
+			color: white;
+			position: absolute;
+			top: 0px;
+			z-index: 3;
+			padding: 25% 0;
+			opacity: 0;
+			text-align: center;
+			font: bold 14px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+			@include transition(all ease 0.2s);
+		}
+		&:hover {
+			h5 {
+				padding: 30% 0;
+				opacity: 1;
+			}
+		}
+		&:nth-child(4n){
+			margin-right: 0;
+			@media screen and (max-width: 890px) {
+				margin-right: 1.33%;
+			}
+			@media screen and (max-width: 720px) {
+				margin-right: 0;
+			}
+		}
+	}
+
+}

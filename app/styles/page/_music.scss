@@ -1,0 +1,131 @@
+.music {
+	padding-top: 120px;
+	h1 { display: none; }
+	.album {
+		@include outer-container;
+	}
+	.front {
+		width: 33%;
+		float: left;
+		overflow: hidden;
+		@media screen and (max-width: 890px) {
+			width: 50%;
+			min-width: 340px;
+		}
+		img {
+			min-height: em(360);
+			min-width: em(360);
+		}
+
+		@media screen and (max-width: 720px) {  
+			img { min-width: 100%; min-height: auto; }
+		}		
+	}
+	.back {
+		width: 67%;
+		background: white;
+		float: left;
+		padding: em(30) em(40) em(15) em(40);
+		position: relative;
+		min-height: em(360);
+		overflow: hidden;
+		@media screen and (max-width: 890px) { 
+			width: 50%;
+			min-width: 340px;
+		}
+		h2 {
+			font: bold 20px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+			padding-bottom: 40px;
+		}
+		h2 span {
+			font:12px/20px 'Libre Baskerville', Georgia, serif;
+			font-style: italic;
+			text-transform: none;
+			color: lighten(black, 50%);
+			display: block;
+		}
+
+		ol {  
+			list-style-type: decimal;
+			list-style-position:inside;
+			height: 170px;
+			-webkit-column-count: 2;
+			column-count: 2;
+			margin-bottom: em(20);
+			@media screen and (max-width: 890px) {
+				-webkit-column-count: 1;
+				column-count: 1;
+				height: auto;
+				padding-bottom: em(20);
+			}
+		}
+		ol li { 
+			font:13px/23px 'Libre Baskerville', Georgia, serif;
+		}
+		.buy {
+			position: absolute;
+			bottom: em(20);
+			li { 
+				display: inline-block; 
+				color: lighten(black, 50%); 
+			}
+			li a {
+				padding: 0 em(3); 
+				font:13px/23px 'Libre Baskerville', Georgia, serif;
+				color: lighten(black, 50%);
+				@include transition(all ease .2s);
+				&:hover {
+					color: black;
+				}
+			}
+		}
+	}
+	.albums {
+
+		@include outer-container;
+		h2 {
+			margin: em(40) 0 em(20);
+			font:15px/23px 'Libre Baskerville', Georgia, serif;
+			width: 100%;
+			border-top: 1px solid white;
+			padding: em(10) 0;
+		}
+		ul {
+			margin: em(20) 0 em(40);
+			display: block;
+			overflow: auto;
+		}
+
+		li {
+			width: 15.83%;
+			float: left;
+			display: block;
+			background: white;
+			margin-right: 1%;
+			margin-bottom: em(10);
+			@include transition(all ease .2s);
+			@media screen and (max-width: 890px) { 
+				width: 24%;
+			}
+			@media screen and (max-width: 720px) { 
+				width: 49%;
+			}
+
+		}
+		li:last-child {
+			margin-right: 0;
+		}
+		h4 {
+			font: bold 12px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			text-transform: uppercase;
+			padding: em(3) em(10);
+			color: black;
+		}
+		li:hover {
+			background: black;
+			h4 { color: white; }
+		}
+
+	}
+}

@@ -1,0 +1,93 @@
+.gigs {
+	@include outer-container;
+	padding-top: em(120);
+	position: relative;
+	z-index: 2;
+	h1 {
+		font:36px/40px 'Soin Sans Pro', Helvetica, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: white;
+	}
+	
+	ul {
+		width: 80%;
+		min-width: 830px;
+		margin: em(20) 0 em(80) 0;
+		padding: 0;
+		@media screen and (max-width: 890px) {
+			width: 90%;
+			min-width: 90%;
+		}
+	}
+	li {
+		border-bottom: 1px solid lighten(black, 95%);
+		padding: em(5) 0;
+		@include transition(all ease .2s);
+	}
+	.date {
+		font: bold 14px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+		text-transform: uppercase;
+		width: 20%;
+		display: inline-block;
+		white-space: nowrap;
+		padding-left: em(10);
+		color: white;
+		@media screen and (max-width: 890px) {
+			width: inherit;
+			padding-right: em(20);
+		}
+
+	}
+	.venue {
+		width: 60%;
+		display: inline-block;
+		font:15px/23px 'Libre Baskerville', Georgia, serif;
+		white-space: nowrap;
+		color: white;
+		@media screen and (max-width: 890px) {
+			width: inherit;
+			padding-right: em(20);
+		}
+	}
+	li h3 {
+		font:28px/40px 'Soin Sans Pro', Helvetica, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		padding: em(10) 0 0 0;
+		color: white;
+
+	}
+	li:hover {
+		background: rgba(0,0,0,.3);
+	}
+	a.info {
+		padding-right: em(20);
+		font: bold 12px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+		text-transform: uppercase;
+		white-space: nowrap;
+		color: darken(white, 10%);
+	}
+	a.book {
+		font: bold 12px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+		text-transform: uppercase;
+		border-bottom: 1px solid white;
+		color: white;
+		white-space: nowrap;
+		@media screen and (max-width: 890px) {
+			float:right;
+		}
+	}
+}
+.portrait2 {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: url(http://placehold.it/1300x800/666/555) center center no-repeat; 
+	background-size: cover;
+	@media screen and (max-width: 890px) {
+		margin-left: em(-20);
+	}
+}
