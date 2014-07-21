@@ -68,6 +68,14 @@ $(document).ready(function(){
 		}
 
 	});
+
+	$('a.down').on('click', function(){
+		var wH = $(window).height();
+		var navH = $('header').height();
+		$('body').animate({
+			'scrollTop' : wH - navH
+		},300);
+	});
  
 });
  

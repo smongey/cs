@@ -80,11 +80,66 @@
 		@include border-right-radius(em(6));
 		border: 2px solid white;
 	}
-
+	.slider__nav {
+		bottom: em(85);
+	}
 	.slider__nav-item--current {
 		background: white;
 	}
 
+}
+
+a.down {
+	position: fixed;
+	width: em(46);
+	height: em(46);
+	display: block;
+	z-index: 2;
+	bottom: em(20);
+	background: transparent;
+	left:calc(50% - 23px);
+	text-indent: -9999px;
+	border: 3px solid white;
+	@include transition(all ease .2s);
+	@include border-top-radius(em(23));
+	@include border-bottom-radius(em(23));
+	@include border-left-radius(em(23));
+	@include border-right-radius(em(23));
+	&:before {
+		width: em(18);
+		left: em(5);
+		height: 3px;
+		content: '';
+		display: block;
+		position: absolute;
+		@include transform(rotate(45deg));
+		background: white;
+		top: em(20);
+		@include transition(all ease .2s);
+	}
+	&:after {
+		width: em(18);
+		left: em(17);
+		height: 3px;
+		content: '';
+		display: block;
+		position: absolute;
+		@include transform(rotate(-45deg));
+		background: white;
+		top: em(20);
+		@include transition(all ease .2s);
+	}
+	&:hover:before {
+		@include transition(all ease .2s);
+		@include transform(rotate(55deg));
+		left: em(6);
+	}
+	&:hover:after {
+		@include transition(all ease .2s);
+		@include transform(rotate(-55deg));
+		left: em(16);
+		
+	}
 }
 
 .home { 
