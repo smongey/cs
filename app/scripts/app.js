@@ -45,7 +45,8 @@ function pageElems() {
 
 $(document).ready(function(){
  
-    ajaxCall('h1 a, ul.main li a', '#container', '#guts', 200);
+ 	FastClick.attach(document.body);
+ 	ajaxCall('h1 a, ul.main li a', '#container', '#guts', 200);
 
 	$('a.mobile').on('click', function(e){
 		e.preventDefault();
