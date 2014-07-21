@@ -1328,8 +1328,87 @@ footer {
     border-top-right-radius: 0.375em;
     border-bottom-right-radius: 0.375em;
     border: 2px solid white; }
+  .slider .slider__nav {
+    bottom: 5.3125em; }
   .slider .slider__nav-item--current {
     background: white; }
+
+a.down {
+  position: fixed;
+  width: 2.875em;
+  height: 2.875em;
+  display: block;
+  z-index: 2;
+  bottom: 1.25em;
+  background: transparent;
+  left: calc(50% - 23px);
+  text-indent: -9999px;
+  border: 3px solid white;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  border-top-left-radius: 1.4375em;
+  border-top-right-radius: 1.4375em;
+  border-bottom-left-radius: 1.4375em;
+  border-bottom-right-radius: 1.4375em;
+  border-top-left-radius: 1.4375em;
+  border-bottom-left-radius: 1.4375em;
+  border-top-right-radius: 1.4375em;
+  border-bottom-right-radius: 1.4375em; }
+  a.down:before {
+    width: 1.125em;
+    left: 0.3125em;
+    height: 3px;
+    content: '';
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: white;
+    top: 1.25em;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s; }
+  a.down:after {
+    width: 1.125em;
+    left: 1.0625em;
+    height: 3px;
+    content: '';
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: white;
+    top: 1.25em;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s; }
+  a.down:hover:before {
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    -webkit-transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
+    -o-transform: rotate(55deg);
+    transform: rotate(55deg);
+    left: 0.375em; }
+  a.down:hover:after {
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    -webkit-transform: rotate(-55deg);
+    -moz-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    -o-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+    left: 1em; }
 
 .home {
   max-width: 68em;
