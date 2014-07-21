@@ -61,7 +61,7 @@
 	.more {
 		float: left;
 		width: 100%;
-		font: bold 15px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+		font: bold 15px/25px 'soinsanslight', Helvetica, sans-serif;
 		text-transform: uppercase;
 		padding: em(20) 0;
 		color: black;
@@ -111,7 +111,7 @@ aside {
 			@include transition(all ease 0.5s);
 		}
 		.follow p { 
-			font: bold 14px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			font: bold 14px/25px 'soinsanslight', Helvetica, sans-serif;
 			text-transform: uppercase;
 			position: absolute;
 			opacity: 0;
@@ -132,7 +132,7 @@ aside {
 			padding: em(25);
 		}
 		h3 {
-			font: bold 18px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			font: bold 18px/25px 'soinsanslight', Helvetica, sans-serif;
 			text-transform: uppercase;
 			padding-bottom: em(10);
 			border-bottom: 1px solid $slate;

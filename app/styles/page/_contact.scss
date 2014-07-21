@@ -5,7 +5,7 @@
 	z-index: 2;
 	min-height: 100vh;
 	h1 {
-		font:36px/40px 'Soin Sans Pro', Helvetica, sans-serif;
+		font:36px/40px 'soinsanslight', Helvetica, sans-serif;
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		color: black;
@@ -17,6 +17,10 @@
 			font:26px/26px 'Libre Baskerville', Georgia, serif;
 			font-style: italic;
 			color: black;
+			@media screen and (max-width: 720px) {
+				font-size: 20px;
+				line-height: 24px;
+			}
 		}
 		p {
 			padding: em(10) 0;
@@ -28,13 +32,13 @@
 	}
 	.social {
 		li {
-			font:bold 16px/26px 'Soin Sans Pro', Helvetica, sans-serif;
+			font:bold 16px/26px 'soinsanslight', Helvetica, sans-serif;
 			text-transform: uppercase;
 			padding: em(5) 0;
 			border-bottom: 1px solid black;
 			display: block;
 			a {
-				font:bold 16px/26px 'Soin Sans Pro', Helvetica, sans-serif;	
+				font:bold 16px/26px 'soinsanslight', Helvetica, sans-serif;	
 				@include transition(all ease .2s);
 			}
 			&:hover {

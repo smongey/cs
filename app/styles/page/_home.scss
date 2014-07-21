@@ -28,7 +28,7 @@
 			color: white;
 		}
 		.credit {
-			font: bold 15px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+			font: bold 15px/25px 'soinsanslight', Helvetica, sans-serif;
 			text-transform: uppercase;
 			color: white;
 			margin-top: 10px;
@@ -92,6 +92,8 @@
 	padding: em(50) 0;
 	margin-top: 100vh; 
 	text-align: center;
+	position: relative;
+	z-index: 3;
 	
 	.left {
 		float: left;
@@ -110,6 +112,9 @@
 				float: left;
 				height: 340px;		
 			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
+			}
 			h3 {
 				position: absolute; 
 				width: 100%;
@@ -120,7 +125,7 @@
 				left: 0;
 				background: rgba(0,0,0,.5);
 				padding-top: calc(50% - 20px);
-				font: 40px/40px 'Soin Sans Pro', Helvetica, sans-serif;
+				font: 40px/40px 'soinsanslight', Helvetica, sans-serif;
 				text-transform: uppercase;
 				letter-spacing: 5px;
 				@include transition(all ease .2s);
@@ -134,6 +139,9 @@
 				width: 50%;
 				float: left;
 				height: 340px;	
+			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
 			}
 			a {
 				width: 100%;
@@ -159,7 +167,7 @@
 			span { display: block; font-size: 2em; margin-bottom: em(5); }
 			h3 { 
 				text-transform: uppercase;
-				font: 20px/20px 'Soin Sans Pro', Helvetica, sans-serif;
+				font: 20px/20px 'soinsanslight', Helvetica, sans-serif;
 				letter-spacing: 2px;
 				margin-bottom: em(25);
 				
@@ -193,10 +201,15 @@
 				left: 0;
 				background: rgba(0,0,0,.5);
 				padding: em(50) em(20);
-				font: 28px/34px 'Soin Sans Pro', Helvetica, sans-serif;
+				font: 28px/34px 'soinsanslight', Helvetica, sans-serif;
 				text-transform: uppercase;
 				letter-spacing: 5px;
 				@include transition(all ease .2s);
+
+				@media screen and (max-width: 720px) {
+					font-size: 22px;
+					line-height: 28px;
+				}
 			}
 			h3:before {
 				content: "News";
@@ -225,6 +238,9 @@
 				float:left;
 				height: 320px;
 			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
+			}
 			h3 {
 				position: absolute; 
 				width: 100%;
@@ -234,7 +250,7 @@
 				left: 0;
 				background: rgba(0,0,0,.5);
 				padding: em(50) em(20);
-				font: 40px/34px 'Soin Sans Pro', Helvetica, sans-serif;
+				font: 40px/34px 'soinsanslight', Helvetica, sans-serif;
 				text-transform: uppercase;
 				letter-spacing: 5px;
 				@include transition(all ease .2s);
@@ -261,6 +277,9 @@
 				height: 320px;
 				padding: em(70) em(35);
 			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
+			}
 			&:hover {
 				background: white;
 				color: black;
@@ -281,7 +300,7 @@
 				@include transition(all ease 0.5s);
 			}
 			.follow p { 
-				font: bold 14px/25px 'Soin Sans Pro', Helvetica, sans-serif;
+				font: bold 14px/25px 'soinsanslight', Helvetica, sans-serif;
 				text-transform: uppercase;
 				position: absolute;
 				opacity: 0;

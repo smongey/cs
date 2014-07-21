@@ -11,19 +11,30 @@
 	h2 {
 		font: 28px/34px 'Caslon', Georgia, serif;
 		margin-bottom: em(20);
+		@media screen and (max-width: 720px) {
+			font-size: 22px;
+			line-height: 28px;
+		}
 	}
+	
 	div {
 		width: 50%;
 		margin-bottom: em(80);
 		@media screen and (max-width: 1120px) {
 			padding-left: em(20);
 		}
-
+		@media screen and (max-width: 720px) {
+			padding-left: 0;
+		}
 		p {
 			font:15px/24px 'Libre Baskerville', Georgia, serif;
 			text-indent: em(50);
 			//padding-left: em(60);
 			margin-bottom: 0;
+			@media screen and (max-width: 720px) {
+				font-size: 13px;
+				line-height: 20px;
+			}
 		}
 		@media screen and (max-width: 720px) { 
 			width: 100%;

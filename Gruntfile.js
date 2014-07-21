@@ -374,9 +374,10 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     'sass:dist',
-    'jshint:all',
-    'csscss:check',
-    'csslint:check'
+    'jshint:all'
+    // ,
+    // 'csscss:check',
+    // 'csslint:check'
   ]);
 
   // No real tests yet. Add your own.
@@ -394,7 +395,7 @@ module.exports = function (grunt) {
     'copy:assemble',
     'useminPrepare',
     'concat',
-    'cssmin',
+    //'cssmin',
     'uglify',
     'imagemin',
     'svgmin',

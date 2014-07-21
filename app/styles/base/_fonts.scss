@@ -1,10 +1,19 @@
+@import url("//hello.myfonts.net/count/2b78f2");
+@font-face {
+	font-family: 'soinsanslight';
+	src: url('../fonts/2B78F2_0_0.eot');
+	src: url('../fonts/2B78F2_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/2B78F2_0_0.woff') format('woff'),
+	url('../fonts/2B78F2_0_0.ttf') format('truetype');
+}
+
 @font-face {
 	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?9oubd8');
-	src:url('/fonts/icomoon.eot?#iefix9oubd8') format('embedded-opentype'),
-		url('/fonts/icomoon.woff?9oubd8') format('woff'),
-		url('/fonts/icomoon.ttf?9oubd8') format('truetype'),
-		url('/fonts/icomoon.svg?9oubd8#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?9oubd8');
+	src:url('../fonts/icomoon.eot?#iefix9oubd8') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?9oubd8') format('woff'),
+		url('../fonts/icomoon.ttf?9oubd8') format('truetype'),
+		url('../fonts/icomoon.svg?9oubd8#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
