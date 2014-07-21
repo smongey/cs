@@ -186,7 +186,7 @@ nav {
 .wrap {
 	position: relative;
 	width: 100%;
-	background: url(/images/mooning.png) repeat;
+	background: url(../images/mooning.png) repeat;
 	z-index: 2;
 	@media screen and (max-width: 890px) {
 		padding: 0 em(20);
@@ -196,7 +196,7 @@ nav {
 footer {
 	position: relative;
 	z-index: 3;
-	background: url(/images/mooning.png) repeat;
+	background: url(../images/mooning.png) repeat;
 	@media screen and (max-width: 890px) {
 		padding: 0 em(20);
 	}
